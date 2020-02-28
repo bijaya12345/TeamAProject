@@ -12,6 +12,7 @@ public interface UserDao {
 	void saveUserInfo(User user);
 	
 	List<User> getAllUserInfo();
+	//what's up!!
 	
 	void deleteUser(int id);
 	

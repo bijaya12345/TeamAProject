@@ -23,7 +23,9 @@
 					<th>DOB</th>
 					<th>Hobbies</th>
 					<th>Nationality</th>
+					<th>Phone</th>
 					<th>Actions</th>
+					
 				</tr>
 			</thead>
 			<tbody>
@@ -36,6 +38,7 @@
 						<td>${user.dob }</td>
 						<td>${user.hobbies }</td>
 						<td>${user.nationality }</td>
+						<td>${user.phone }</td>
 						<td>
 						<a href="UserController?action=edit_user&id=${user.id}">Edit</a>
 						<a href="UserController?action=delete_user&id=${user.id}">Delete</a>

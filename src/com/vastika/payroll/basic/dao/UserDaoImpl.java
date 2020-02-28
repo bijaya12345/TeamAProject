@@ -13,11 +13,11 @@ import com.vastika.payroll.util.DbUtil;
 
 public class UserDaoImpl implements UserDao {
 
-	public static final String INSERT_SQL = "Insert into user_tbl(user_name, password, email, gender, dob, hobbies, nationality) values(?,?,?,?,?,?,?)";
+	public static final String INSERT_SQL = "Insert into user_tbl(user_name, password, email, gender, dob, hobbies, nationality, phone) values(?,?,?,?,?,?,?,?)";
 	public static final String SELECT_SQL = "select * from user_tbl";
 	public static final String DELETE_SQL = "delete from user_tbl where id = ?";
 	public static final String SELECT_SQL_BY_ID = "select * from user_tbl where id = ?";
-	public static final String UPDATE_SQL = "update user_tbl set user_name=?, password=?, email=?, gender=?, dob=?, hobbies=?, nationality=? where id = ?";
+	public static final String UPDATE_SQL = "update user_tbl set user_name=?, password=?, email=?, gender=?, dob=?, hobbies=?, nationality=?, phone=? where id = ?";
 
 	
 	@Override
@@ -31,6 +31,7 @@ public class UserDaoImpl implements UserDao {
 			ps.setDate(5, new java.sql.Date(user.getDob().getTime()));
 			ps.setString(6, user.getHobbies());
 			ps.setString(7, user.getNationality());
+			ps.setString(8, user.getPhone());
 			ps.executeUpdate();
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -53,6 +54,7 @@ public class UserDaoImpl implements UserDao {
 				user.setGender(rs.getString("gender"));
 				user.setHobbies(rs.getString("hobbies"));
 				user.setNationality(rs.getString("nationality"));
+				user.setPhone(rs.getString("phone"));
 				user.setDob(rs.getDate("dob"));
 				userList.add(user);
 			}
@@ -86,6 +88,7 @@ public class UserDaoImpl implements UserDao {
 			ps.setDate(5, new java.sql.Date(user.getDob().getTime()));
 			ps.setString(6, user.getHobbies());
 			ps.setString(7, user.getNationality());
+			ps.setString(8, user.getPhone());
 			ps.executeUpdate();
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -108,6 +111,7 @@ public class UserDaoImpl implements UserDao {
 				user.setGender(rs.getString("gender"));
 				user.setHobbies(rs.getString("hobbies"));
 				user.setNationality(rs.getString("nationality"));
+				user.setPhone(rs.getString("phone"));
 				user.setDob(rs.getDate("dob"));
 				
 			}

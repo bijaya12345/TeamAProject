@@ -15,6 +15,15 @@ public class User {
 	private String username;
 	private String password;
 	private String email;
+	private String phone;
+	
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 	private String gender;
 	private Date dob;
 	private String hobbies;

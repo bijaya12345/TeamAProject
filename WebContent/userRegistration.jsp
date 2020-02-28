@@ -21,6 +21,7 @@
 		<label>Email</label>
 		<input type = "email" name = "email">
 	</div>
+	
 	<div>
 		<label>DOB</label>
 		<input type = "date" name = "dob">
@@ -44,8 +45,13 @@
 	</select>
 	</div>
 	<div>
+		<label>Phone</label>
+		<input type = "text" name = "phone">
+	</div>
+	<div>
 		<input type = "submit" value = "Submit">
 	</div>
+	
 </form>
 </body>
 </html>

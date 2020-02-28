@@ -12,6 +12,8 @@ public interface UserDao {
 	void saveUserInfo(User user);
 	
 	List<User> getAllUserInfo();
+	//what's up!!
+	// hello!!!
 	
 	void deleteUser(int id);
 	

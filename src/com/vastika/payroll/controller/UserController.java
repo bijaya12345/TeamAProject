@@ -74,7 +74,7 @@ public class UserController extends HttpServlet {
 		user.setPassword(request.getParameter("pass"));
 		user.setEmail(request.getParameter("email"));
 		user.setGender(request.getParameter("gender"));
-		
+		user.setPhone(request.getParameter("phone"));
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
 			Date dob = sdf.parse(request.getParameter("dob"));

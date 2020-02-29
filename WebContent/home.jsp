@@ -7,7 +7,7 @@
 <title>Home</title>
 <%@ include file="header.jsp" %>
 </head>
-<body background="file:///C:/Users/Ritirose/eclipse-Santossirspace/PayrollSystem/WebContent/background%20image.jpg">
+<body background="back3.jpg">
 	<header>
 		<h1>Welcome to my home page</h1>
 	</header>
